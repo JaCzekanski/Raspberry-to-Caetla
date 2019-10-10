@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Raspberry to Caetla interface"
 Date "2019-10-01"
-Rev "v1.0"
+Rev "v1.1"
 Comp ""
 Comment1 ""
 Comment2 "creativecommons.org/licenses/by/4.0"
@@ -156,7 +156,7 @@ L 74xx:74HCT541 U2
 U 1 1 5D9836EA
 P 5600 2550
 F 0 "U2" H 5600 3531 50  0000 C CNN
-F 1 "74LVC541AT20" H 5600 3440 50  0000 C CNN
+F 1 "74HCT541" H 5600 3440 50  0000 C CNN
 F 2 "Package_SO:Infineon_PG-DSO-20-32" H 5600 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HCT541" H 5600 2550 50  0001 C CNN
 	1    5600 2550
@@ -245,10 +245,6 @@ F 3 "~" H 6400 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 1250 6400 1300
-Wire Wire Line
-	6400 1700 6400 1950
-Wire Wire Line
-	6400 1950 7750 1950
 $Comp
 L power:GND #PWR03
 U 1 1 5DA006BF
@@ -980,4 +976,12 @@ $EndComp
 Connection ~ 2900 3950
 Wire Wire Line
 	2900 3950 2900 4100
+Wire Wire Line
+	8850 2050 8850 1750
+Wire Wire Line
+	8850 1750 6400 1750
+Wire Wire Line
+	6400 1750 6400 1700
+Wire Wire Line
+	8250 2050 8850 2050
 $EndSCHEMATC
